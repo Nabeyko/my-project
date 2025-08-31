@@ -1,0 +1,187 @@
+html {
+  --header-width: 50px;
+  --header-haight: 50px;
+}
+
+/* #region Header */
+
+.header {
+  position: sticky;
+  top: 0;
+  /* left: 0;
+  right: 0; */
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000;
+  padding: 10px 0;
+}
+
+.name-and-profession {
+  font-family: Montserrat, sans-serif;
+  display: block;
+  line-height: 10px;
+  align-items: center;
+}
+
+.nav__list {
+  height: 90px;
+  width: 90px;
+  border-radius: 20px;
+
+}
+
+h1 {
+  color: #F5F5DC ;
+}
+
+.my-profetion {
+  font-size: 15px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  color: #ccc ;
+}
+
+/* #endregion */
+ 
+/* #region about-me */
+
+.about-me {
+  margin: 30px 0;
+  background-color: #F5F5F5;
+  line-height: 15px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: left;
+  color: #333333;
+  font-size: 1.5em;
+}
+
+
+.info {
+  background-color: #F5F5F5;
+  font-size: 1em;
+  color: #333333;
+}
+
+/* #endregion */
+
+/* #region MY history */
+
+.section {
+  margin: 5% 10%;
+  display: flex;
+  align-items: center;
+  /* object-fit: cover; */
+  gap: 20px;
+
+  background-color: #F5F5F5 ;
+  border-radius: 10px;
+}
+
+.my-foto {
+  margin: 5px 5px;
+  border-radius: 7%;
+  width: 200px;
+  height: 200px;
+}
+
+.text {
+  font-weight: 500;
+  padding: 0 50px;
+  font-size: 1.2em;
+  color: #333333;
+}
+
+.mate {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* #endregion */
+
+/* #region Learning */
+
+.container {
+  background-color: #F5F5F5;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.learning-progress {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+ul [class="completed"]::after {
+  content: '✓';
+}
+
+ul [class="completed"] {
+  color: #888;
+}
+
+ul [class="current"]::after {
+  content: '"🚀';
+  color: #555555;
+}
+
+/* #endregion */
+
+/* #region Footer */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+footer p::after {
+  content: '🔽';
+}
+
+.gmail {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* #endregion */
+
+/* #region scrol */
+
+.scrollTop {
+  position: fixed;
+  right: 32px;
+  bottom: 64px;
+
+  height: var(--header-haight);
+  width: var(--header-width);
+
+  border-radius: 10px;
+  background-color: #444;
+
+  text-align: center;
+  line-height: var(--header-haight);
+
+}
+
+.scrollTop__link {
+  font-size: 30px;
+
+  color: #fff;
+  text-decoration: none;
+}
+
+/* #endregion */
